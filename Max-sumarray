@@ -1,0 +1,15 @@
+public class Max-sumarray{
+  public static void sum(int num[]) {
+      int n=num.length;
+      for(int i=0;i<n;i++){
+        for(int j=i;j<n;j++){
+          for(int k=i;k<j;k++){
+            
+          }
+        }
+      }
+  }
+    public static void main(String[] args) {
+      
+ }
+}[2,3,4,5]
