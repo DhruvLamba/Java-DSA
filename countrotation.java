@@ -1,6 +1,6 @@
 public class countrotation {
     public static void main(String[] args) {
-        int[] arr = {6,7,0,1,2,4,5};
+        int[] arr = {0,1,2,4,5};
         int count=pivot(arr)+1;
         System.out.println(count);
     }
@@ -12,7 +12,7 @@ public class countrotation {
             if(mid<end && arr[mid]>arr[mid+1]){
                 return mid;
             }
-            else if(arr[mid]<arr[mid-1]){
+            else if(mid>start && arr[mid]<arr[mid-1]){
                 return mid-1;
             }  
             else if(arr[start]<=arr[mid]){
