@@ -26,8 +26,8 @@
 // Using Binary Search
 public class min{
     public static void main(String[] args) {
-        int[] nums1={3};
-        int[] nums2={3,4};
+        int[] nums1={1,2,3};
+        int[] nums2={2,4};
         int res;
         for(int i=0;i<nums1.length;i++){            
             res=search(nums2,nums1[i]);            
