@@ -13,9 +13,9 @@ public class linearsearch {
     int arr[]={2,4,3,9,10,12};
     int n=sc.nextInt();
     linear(arr, n);
+    sc.close();
     
-  }
-    
+  }   
 
 
 }

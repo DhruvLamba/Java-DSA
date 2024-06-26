@@ -25,6 +25,7 @@ public class Binarysearch {
     int num[]={1,2,3,4,5,12,14};
        
     System.out.println("element is at index" + " " + binary(num,n));
+    sc.close();
 
     
   }

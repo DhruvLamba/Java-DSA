@@ -14,6 +14,7 @@ public class Sum {
       }
       System.out.println("");
       System.out.println("The sum is" + sum);
+      sc.close();
   }
   
 }

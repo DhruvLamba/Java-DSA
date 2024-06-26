@@ -17,5 +17,6 @@ public class fly {
     Scanner sc=new Scanner(System.in);
     int n=sc.nextInt();
     flyod(n);
+    sc.close();
   }
 }

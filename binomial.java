@@ -25,6 +25,7 @@ public class binomial {
     int c = n-r;
     int result = bino(n,r,c);
     System.out.println(result);
+    sc.close();
   }
   
 }

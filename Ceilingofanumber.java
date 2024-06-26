@@ -25,6 +25,7 @@ public class Ceilingofanumber {
     int num[]={5,6,7,8,9,15,18};
        
     System.out.println(num[binary(num,n)]);
+    sc.close();
 
     
   }

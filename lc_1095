@@ -13,7 +13,6 @@ public class Main {
             System.out.println(right);
         }
     }
-
     public static int orderagniostic(int[] arr, int target,int start, int end, boolean isAsc){
         while(start<=end){
             int mid=start+(end-start)/2;

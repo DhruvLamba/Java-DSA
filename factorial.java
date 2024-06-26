@@ -19,6 +19,7 @@ public class factorial {
     int c = n-r;
     int result = fact(n,r,c);
     System.out.println(result);
+    sc.close();
   }
   
 }

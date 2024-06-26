@@ -1,7 +1,6 @@
 public class Solution{
     public int guessNumber(int n) { 
-        long low=1;
-        
+        long low=1;        
         long high=n;
         int count=0;
         long mid=0;
