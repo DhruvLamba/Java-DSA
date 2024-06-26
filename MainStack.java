@@ -8,19 +8,16 @@ public class MainStack{
     public MainStack(int size){
         this.data = new int[size];
     }
-    public boolean push(int element) throws stackexception{
+    public boolean push(int element) {
         if(isfull()){
-            throw new stackexception("Stack is full");
+            System.out.println("Stack is full");
         }
         ptr++;
         data[ptr]=element;
         return true;
     }
     public boolean isfull(){
-        if(ptr==data.length-1){
-            return true;
-        }
-        return false;
+        return ptr==data.length;
     }
     public int pop() throws stackexception{
         if(isempty()){
@@ -30,10 +27,7 @@ public class MainStack{
         return data[ptr];
     }
     public boolean isempty(){
-        if(ptr==-1){
-            return true;
-        }
-        return false;
+        return ptr==-1;
     }
 
     public void peek() throws stackexception{
