@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "customstack",
+            "request": "launch",
+            "mainClass": "customstack",
+            "projectName": "Java-DSA_2293b726"
+        },
+        {
+            "type": "java",
+            "name": "maxsub",
+            "request": "launch",
+            "mainClass": "maxsub",
+            "projectName": "Java-DSA_2293b726"
+        },
+        {
+            "type": "java",
             "name": "LL",
             "request": "launch",
             "mainClass": "LL",

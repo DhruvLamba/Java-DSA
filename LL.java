@@ -49,7 +49,34 @@ public class LL{
         secondlast.next=null;
     }
 
+    public void addindex(int index,int data){
+        Node new_node=new Node(data);
+        if(head==null){
+            head=new_node;
+            return;
+        }
+        Node temp=head;
+        for(int i=1;i<index;i++){
+            temp=temp.next;
+        }
+        new_node.next=temp.next;
+        temp.next=new_node;        
+    }
 
+    public void delindex(int index){        
+        if(head==null){
+           System.out.println("The list is empty");
+            return;
+        }
+        Node last=head.next;
+        Node second=head;
+        for(int i=1;i<index;i++){
+            last=last.next;
+            second=second.next;            
+        }
+        second.next=last.next;        
+        
+    }
     public void display(){
         if(head==null){
             System.out.println("List is empty");
@@ -66,16 +93,15 @@ public class LL{
         LL list=new LL();
         list.addfirst(5);
         list.addfirst(6);
-        list.addfirst(7);
+        list.addfirst(10);
         list.addfirst(8);
-        list.display();        
-        list.deletefirst();
+        list.delindex(2);
+        // list.display();        
+        // list.deletefirst();
+        // list.display();
+        // list.deleteLast();
+        // list.display();
+        list.addindex(3, 7);
         list.display();
-        list.deleteLast();
-        list.display();
-
-
-
-
     }
 }
